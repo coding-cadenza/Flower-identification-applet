@@ -1,0 +1,11 @@
+<!--index.wxml-->
+<view class="container index-container" >
+
+    <image src="{{cover}}" class=" cover cover-image" mode="aspectFill"></image>
+  
+  <view class="bt-con">
+    <button id="bt-select" class="theme-color " bindtap="selectPhoto" ><icon class="iconfont icon-tupian "></icon>上传图片</button>
+    <button class="bt-photo" bindtap="goToRec"><icon class="iconfont icon-paizhao"></icon>拍照识花</button>
+  </view>
+
+</view>

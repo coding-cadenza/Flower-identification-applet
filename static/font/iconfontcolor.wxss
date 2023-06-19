@@ -1,0 +1,21 @@
+@font-face {
+  font-family: "iconfont-color"; /* Project id 4017988 */
+  /* Color fonts */
+  src: 
+       url('//at.alicdn.com/t/c/font_4017988_pqyj91vfz2q.woff?t=1681704791570') format('woff');
+}
+
+.iconfont-color {
+  font-family: "iconfont-color" !important;
+  font-size: 16px;
+  font-style: normal;
+  
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-diaoxie:before {
+  content: "\e60b";
+}
+.icon-lianjie1:before {
+  content: "\e68a";
+}

@@ -1,0 +1,16 @@
+<!--pages/record/record.wxml-->
+<view class="record-container">
+  <camera frame-size="large" class="camera" 	flash="{{lightOn?'torch':'off'}}"></camera>
+  <view class="mask"></view>
+  <view class="menu">
+    <button bindtap="select" id="select">
+      <icon class="icon-xiangce iconfont "></icon>
+    </button>
+    <button bindtap="record" id="record">
+    </button>
+    <button bindtap="changeLight" id="light">
+      <icon class="iconfont {{lightOn?'icon-diantong_kai':'icon-diantong_guan'}}"></icon>
+    </button>
+  </view>
+
+</view>

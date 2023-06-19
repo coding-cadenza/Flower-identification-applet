@@ -1,0 +1,43 @@
+/* pages/record/record.wxss */
+.camera{
+  width: 100vw;
+  height: 100vh;
+}
+.menu{
+  width: 100%;
+  position: fixed;
+  bottom: 60rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#record
+{
+  width: 160rpx;
+  height: 160rpx;
+  border-radius: 50%;
+  border: 15rpx solid rgb(170, 168, 168);
+}
+#select,#light{
+  width: 140rpx;
+  height: 100rpx;
+  background-color: transparent;
+  color: #ececec;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mask{
+  width: 600rpx;
+  height: 600rpx;
+  position: fixed;
+  top: 50vh;
+  left: 50vw;
+  margin-top: -380rpx;
+  margin-left: -300rpx;
+  border-radius: 100%;
+  border: 6rpx dashed rgb(221, 220, 220);    
+  
+}

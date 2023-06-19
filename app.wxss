@@ -1,0 +1,37 @@
+/**app.wxss**/
+/*引用阿里巴巴矢量图标*/
+@import "static/font/iconfont.wxss";
+@import "static/font/iconfontcolor.wxss";
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+} 
+.theme-color{
+  color: #B993D6 !important;
+}
+.bt-photo{  
+  background-image: linear-gradient(to right, #B993D6 0%, #8CA6DB  51%, #B993D6  100%);
+  width: 11rem;
+  padding: 10px 20px;
+  text-align: center;
+  background-size: 200% auto;
+  color: white;            
+  box-shadow: 0 0 10px #eee;
+  border-radius: 20px;
+  font-size: 20px;
+}
+
+/* 隐藏滚动条 */
+::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+

@@ -1,0 +1,131 @@
+/* pages/rec/rec.wxss */
+.rec-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+.src-img {
+  width: 100%;
+  flex: 1;
+}
+
+.detail-container {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 70%;
+  animation: up-and-show .8s ease-in-out;
+}
+
+@keyframes up-and-show {
+  0% {
+    height: 0;
+  }
+
+  100% {
+    height: 70%;
+  }
+}
+
+.fail-container {
+  margin-top: 60rpx;
+  justify-content: flex-start;
+
+}
+
+.fail-msg {
+  color: #888888;
+}
+
+.success-container {
+  justify-content: flex-start;
+  overflow: auto;
+}
+
+.detail-img{
+  display: flex;
+  flex-direction: column;
+  height: 300rpx;
+  width: 400rpx;
+  border-radius: 50%; 
+  margin: 20rpx 0;
+}
+.detail-name{
+  font-size:large; 
+  font-weight:600
+}
+.detaile-link{
+  position: absolute;
+  right: 20rpx;
+  top:15rpx;
+  font-size: 50rpx;
+}
+.detaile-link:active{
+  color: #5289ff;
+}
+.detail-icon{
+  font-size: 18px;
+  font-weight: 600;
+  padding-right: 15rpx;
+  color: #ffbc70;
+}
+.deyail-title{
+  font-size: 18px;
+  font-weight: 700;
+  width: 100%;
+}
+.detial-content{
+  color: #888888;
+  margin: 15rpx 0 20rpx;
+}
+.list-container{
+  box-sizing: content-box;
+  padding: 0 30rpx;
+}
+
+
+/* loading动画 */
+.loading {
+  position: absolute;
+  top: 50%;
+  margin-top: -305rpx;
+  width: 450rpx;
+  height: 450rpx;
+  border: 8rpx solid rgba(255, 255, 255, .9);
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+  border-radius: 100%;
+  background-color: transparent;
+
+  animation: arrow-circle infinite 0.85s linear;
+}
+
+.loading:before,
+.loading:after {
+  position: absolute;
+  top: 386rpx;
+  left: 56rpx;
+  border-top: 18rpx solid rgba(255, 255, 255, .9);
+  border-right: 18rpx solid transparent;
+  border-left: 18rpx solid transparent;
+  content: "";
+  transform: rotate(-40deg);
+}
+.loading:after {
+  top: 50rpx;
+  left: 366rpx;
+
+  transform: rotate(140deg);
+}
+
+@keyframes arrow-circle {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}

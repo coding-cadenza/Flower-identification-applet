@@ -1,0 +1,41 @@
+<!--pages/rec/rec.wxml-->
+<view class="rec-container">
+  <image class="src-img" src="{{imgSrc}}">
+  </image>
+  <!-- 识别时候的旋转遮罩 -->
+  <!-- <view class="mask" >
+  </view> -->
+  <view class="loading" wx:if="{{inRec}}">
+  </view>
+  <view class="detail-container" style="display: {{!inRec ? 'flex' : 'none'}}">
+    <view class="success-container container" style="position: relative;" wx:if="{{!err}}">
+
+      <icon bindtap="goOut" class="detaile-link iconfont icon-lianjie"></icon>
+
+
+      <view class="detail-img">
+        <image src="{{details.img_src}}" style=" width: 100%; border-radius: 20rpx;"></image>
+      </view>
+
+      <view class="detail-name">{{details.name}}</view>
+
+      <view wx:for="{{list_data}}" wx:for-item="item" class="list-container ">
+        <view>
+          <icon class="iconfont {{item.iconClass}} detail-icon " /> <text class="deyail-title">{{item.title}}</text>
+        </view>
+        <view class="detial-content">{{item.content}}</view>
+      </view>
+    </view>
+
+    <!-- 失败的内容 -->
+    <view class="fail-container container" wx:if="{{err}}">
+      <svg class="iconfont-color icon-diaoxie" style="font-size:100px">
+      </svg>
+      <view class="fail-msg">{{errMsg}}</view>
+      <button class="bt-photo" bindtap="goBack" style="margin-top: 40rpx;" wx:if="{{showRecord}}">
+        <icon class="iconfont icon-paizhao"></icon>继续拍照
+      </button>
+    </view>
+  </view>
+
+</view>
